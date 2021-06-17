@@ -7,27 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload='remove_loader()'>
+<body >
+   <div class="Player_page" style="display: block;">
     <div class="container">
         <div class="head">
             <section class="show_player">Player</section>
-            <section class="show_songs">Songs</section>
+            <button class="show_songs" onclick="songs_page()">Playlists</button>
 
         </div>
         <div class="presentsong">
-            <img src="media/kaam.png">
-            <div class="songname">
-
-            </div>
+		  <div class="songname"><h2 style="color:white; padding:50px;">XYZ song</h2></div>
+            <img src="media/kaam.png" style="height:20%; width:20% ">
+			
+			<div class="play_bar" style="width:25%; margin-left:37%;">
             <audio controls loop autoplay>
-                <source src="media/ms.mp3">
+                <source src="media/Muskurane Ki Waja.mp3">
             </audio>
         </div>
-
+       </div>
     </div>
 
+
+
+    <!-- song      -->
+	
     <div class="container-audio">
         <div class="colum1">
             <div class="row"></div>
@@ -107,6 +113,21 @@
     <div class="song_carousal">
 
     </div>
+</div>
+
+<div class="Songs_page" style="display:none;background-image: url(songback.png);">
+    <div class="list">
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
     <script src="index.js"></script>
 </body>
 
